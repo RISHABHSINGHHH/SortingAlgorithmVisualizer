@@ -9,7 +9,7 @@ java Main
 ## Group Members
 * Harshit
     - 22051682
-* Sakshi Pathak ❤️
+* Sakshi Pathak
     - 22051722
 * Pratik Raj
     - 22053176
