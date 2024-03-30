@@ -161,10 +161,10 @@ public class AnimationPanel extends JPanel implements SortingAlgorithms, ActionL
                 if (rectangles[i].getHeight() > rectangles[i + 1].getHeight()) {
                     int temp = rectangles[i].getHeight();
                     rectangles[i].setHeight(rectangles[i + 1].getHeight());
-                    rectangles[i + 1].setHeight(temp);
-                    flag = 1;
-
                     paintImmediately(0, 0, 800, 600);
+                    rectangles[i + 1].setHeight(temp);
+                    paintImmediately(0, 0, 800, 600);
+                    flag = 1;
 
                     // repaint() doesn't work here, and the paintImmediately() function must be
                     // called from something
@@ -193,7 +193,9 @@ public class AnimationPanel extends JPanel implements SortingAlgorithms, ActionL
             }
             int temp = rectangles[k].getHeight();
             rectangles[k].setHeight(rectangles[kMin].getHeight());
+                    paintImmediately(0, 0, 800, 600);
             rectangles[kMin].setHeight(temp);
+                    paintImmediately(0, 0, 800, 600);
         }
 
         MyPanel.isRandom = false;
@@ -214,6 +216,7 @@ public class AnimationPanel extends JPanel implements SortingAlgorithms, ActionL
                 paintImmediately(0, 0, 800, 600);
             }
             rectangles[j + 1].setHeight(currentValue);
+                    paintImmediately(0, 0, 800, 600);
         }
         MyPanel.isRandom = false;
         MyPanel.isNearlySorted = false;
@@ -236,7 +239,6 @@ public class AnimationPanel extends JPanel implements SortingAlgorithms, ActionL
             mergeSortHelper(low, mid);
             mergeSortHelper(mid + 1, high);
             merge(low, mid, high);
-            paintImmediately(0, 0, 800, 600);
         }
     }
 
@@ -302,7 +304,6 @@ public class AnimationPanel extends JPanel implements SortingAlgorithms, ActionL
             if (rectangles[j].getHeight() < pivot) {
                 i++;
                 swap(i, j);
-                paintImmediately(0, 0, 800, 600);
 
             }
         }
@@ -334,7 +335,6 @@ public class AnimationPanel extends JPanel implements SortingAlgorithms, ActionL
 
             heapify(i, 0);
 
-            paintImmediately(0, 0, 800, 600);
         }
 
         MyPanel.isRandom = false;
@@ -362,7 +362,6 @@ public class AnimationPanel extends JPanel implements SortingAlgorithms, ActionL
 
         if (largest != i) {
             swapHeap(i, largest);
-            paintImmediately(0, 0, 800, 600);
 
             heapify(n, largest);
         }
