@@ -9,12 +9,13 @@ java Main
 # Sorting Algorithm Visualizer :
 * A Java-based visual tool to demonstrate the working of various sorting algorithms in real time. Designed for educational purposes and intuitive understanding of algorithm behavior through animation.
 
-- Visualizes popular sorting algorithms:
+# Visualizes popular sorting algorithms:
   - Bubble Sort
   - Selection Sort
   - Insertion Sort
   - Merge Sort
   - Quick Sort
+  - Heap Sort
 - Adjustable size of the rectangle.
 - Built using Java, Java Swing.
 # DEMO
