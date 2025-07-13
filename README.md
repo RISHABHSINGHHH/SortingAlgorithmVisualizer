@@ -5,15 +5,27 @@ cd src
 javac Main.java
 java Main
 ```
+# Overview of the project 
+# Sorting Algorithm Visualizer :
+* A Java-based visual tool to demonstrate the working of various sorting algorithms in real time. Designed for educational purposes and intuitive understanding of algorithm behavior through animation.
+
+- Visualizes popular sorting algorithms:
+  - Bubble Sort
+  - Selection Sort
+  - Insertion Sort
+  - Merge Sort
+  - Quick Sort
+- Adjustable size of the rectangle.
+- Built using Java, Java Swing.
+# DEMO
+<img width="1799" height="972" alt="image" src="https://github.com/user-attachments/assets/2e2f9873-c21d-489c-a738-b4fcb9e6c381" />
+
+
 
 ## Group Members
-* Harshit
-    - 22051682
-* Sakshi Pathak
-    - 22051722
+* Rishabh Dev Singh
+    - 22053183
 * Pratik Raj
     - 22053176
 * Richa Singal
     - 22053181
-* Rishabh Dev Singh
-    - 22053183
